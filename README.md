@@ -2,10 +2,8 @@
 | ----- |
 
 # ESP-MQTT TEST APPLICATION
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
 
-This example connects to the broker URI selected using `idf.py menuconfig` (using mqtt tcp transport) and as a demonstration subscribes/unsubscribes and send a message on certain topic.
-(Please note that the public broker is maintained by the community so may not be always available, for details please see this [disclaimer](https://iot.eclipse.org/getting-started/#sandboxes))
+Esse projeto consiste em comunicação com o protocolo MQTT via TCP
 
 Note: If the URI equals `FROM_STDIN` then the broker address is read from stdin upon application startup (used for testing)
 
