@@ -28,8 +28,8 @@ static void mqtt_app_start(void);
 
 
 /* == Conectando a REDE == */
-#define SSID "Vini"
-#define PASSWORD_WIFI "vini2131"
+#define SSID "NOME_DA_REDE"
+#define PASSWORD_WIFI "SENHA_DA_REDE"
 #define MAXIMUM_RETRY 5
 
 /* == Sinalizar se a conexão foi estabelecida ou não == */
@@ -41,7 +41,7 @@ static EventGroupHandle_t s_wifi_event_group;
 /* == Definindo WIFI FAIL como BIT1 == */
 #define WIFI_FAIL_BIT BIT1
 
-const char *mensagem = "OLÁ NICOLS";
+const char *mensagem = "MENSAGEM_A_SER_ENVIADA_AO_BROKER";
 static int s_retry_num = 0;
 
 /* == Iiniciando a função para o ESP se conectar com o WIFI definido em Kconfig.projbuild == */
@@ -151,7 +151,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG, "MQTT CONECTADO COM SUCESSO");
         MQTT_CONNEECTED=1;
-        msg_id = esp_mqtt_client_subscribe(client, "/topic/test1", 1);
+        msg_id = esp_mqtt_client_subscribe(client, "/topic/test1", 1); // Mude o "/topic/test1" para o seu topico em que ele ira ler a mensagem enviada do broker...
         ESP_LOGI(TAG, "mensagem enviada com sucesso, msg_id=%d", msg_id);
         break;
     case MQTT_EVENT_DISCONNECTED:
@@ -186,7 +186,7 @@ static void mqtt_app_start(void)
 {
     ESP_LOGI(TAG, "iniciando MQTT");
     esp_mqtt_client_config_t mqttConfig = {
-        .broker.address.uri = "mqtt://tcc@broker.emqx.io:1883"};
+        .broker.address.uri = "HOST_DO_SEU_BROKER"};
     
     client = esp_mqtt_client_init(&mqttConfig);
     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);
@@ -199,7 +199,7 @@ void Publisher_Task(void *params)
   {
     if(MQTT_CONNEECTED)
     {
-        esp_mqtt_client_publish(client, "/topic/test3", mensagem, 0, 0, 0);
+        esp_mqtt_client_publish(client, "/topic/test3", mensagem, 0, 0, 0); // Mude o "/topic/test3" para o seu topico que a mensagem será enviada...
         vTaskDelay(15000 / portTICK_PERIOD_MS);
     }
   }
