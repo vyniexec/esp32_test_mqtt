@@ -1,0 +1,48 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects_Embarcado\esp32_test_mqtt\build\bootloader\esp-idf\esptool_py && c:\esp\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects_Embarcado/esp32_test_mqtt/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj 
+ccache C:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -ID:/Projects_Embarcado/esp32_test_mqtt/build/config -ID:/Projects_Embarcado/esp32_test_mqtt/main -IC:/esp/components/newlib/platform_include -IC:/esp/components/freertos/FreeRTOS-Kernel/include -IC:/esp/components/freertos/esp_additions/include/freertos -IC:/esp/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/esp/components/freertos/esp_additions/include -IC:/esp/components/esp_hw_support/include -IC:/esp/components/esp_hw_support/include/soc -IC:/esp/components/esp_hw_support/include/soc/esp32 -IC:/esp/components/esp_hw_support/port/esp32/. -IC:/esp/components/esp_hw_support/port/esp32/private_include -IC:/esp/components/heap/include -IC:/esp/components/log/include -IC:/esp/components/soc/include -IC:/esp/components/soc/esp32/. -IC:/esp/components/soc/esp32/include -IC:/esp/components/hal/esp32/include -IC:/esp/components/hal/include -IC:/esp/components/hal/platform_port/include -IC:/esp/components/esp_rom/include -IC:/esp/components/esp_rom/include/esp32 -IC:/esp/components/esp_rom/esp32 -IC:/esp/components/esp_common/include -IC:/esp/components/esp_system/include -IC:/esp/components/esp_system/port/soc -IC:/esp/components/esp_system/port/include/private -IC:/esp/components/xtensa/include -IC:/esp/components/xtensa/esp32/include -IC:/esp/components/lwip/include -IC:/esp/components/lwip/include/apps -IC:/esp/components/lwip/include/apps/sntp -IC:/esp/components/lwip/lwip/src/include -IC:/esp/components/lwip/port/esp32/include -IC:/esp/components/lwip/port/esp32/include/arch -IC:/esp/components/esp_ringbuf/include -IC:/esp/components/efuse/include -IC:/esp/components/efuse/esp32/include -IC:/esp/components/driver/include -IC:/esp/components/driver/deprecated -IC:/esp/components/driver/esp32/include -IC:/esp/components/esp_pm/include -IC:/esp/components/mbedtls/port/include -IC:/esp/components/mbedtls/mbedtls/include -IC:/esp/components/mbedtls/mbedtls/library -IC:/esp/components/mbedtls/esp_crt_bundle/include -IC:/esp/components/esp_app_format/include -IC:/esp/components/bootloader_support/include -IC:/esp/components/bootloader_support/bootloader_flash/include -IC:/esp/components/esp_partition/include -IC:/esp/components/app_update/include -IC:/esp/components/spi_flash/include -IC:/esp/components/pthread/include -IC:/esp/components/esp_timer/include -IC:/esp/components/app_trace/include -IC:/esp/components/esp_event/include -IC:/esp/components/nvs_flash/include -IC:/esp/components/esp_phy/include -IC:/esp/components/esp_phy/esp32/include -IC:/esp/components/vfs/include -IC:/esp/components/esp_netif/include -IC:/esp/components/wpa_supplicant/include -IC:/esp/components/wpa_supplicant/port/include -IC:/esp/components/wpa_supplicant/esp_supplicant/include -IC:/esp/components/esp_wifi/include -IC:/esp/components/unity/include -IC:/esp/components/unity/unity/src -IC:/esp/components/cmock/CMock/src -IC:/esp/components/console -IC:/esp/components/http_parser -IC:/esp/components/esp-tls -IC:/esp/components/esp-tls/esp-tls-crypto -IC:/esp/components/esp_adc/include -IC:/esp/components/esp_adc/interface -IC:/esp/components/esp_adc/esp32/include -IC:/esp/components/esp_adc/deprecated/include -IC:/esp/components/esp_eth/include -IC:/esp/components/esp_gdbstub/include -IC:/esp/components/esp_gdbstub/xtensa -IC:/esp/components/esp_gdbstub/esp32 -IC:/esp/components/esp_hid/include -IC:/esp/components/tcp_transport/include -IC:/esp/components/esp_http_client/include -IC:/esp/components/esp_http_server/include -IC:/esp/components/esp_https_ota/include -IC:/esp/components/esp_lcd/include -IC:/esp/components/esp_lcd/interface -IC:/esp/components/protobuf-c/protobuf-c -IC:/esp/components/protocomm/include/common -IC:/esp/components/protocomm/include/security -IC:/esp/components/protocomm/include/transports -IC:/esp/components/esp_local_ctrl/include -IC:/esp/components/esp_psram/include -IC:/esp/components/espcoredump/include -IC:/esp/components/espcoredump/include/port/xtensa -IC:/esp/components/wear_levelling/include -IC:/esp/components/sdmmc/include -IC:/esp/components/fatfs/diskio -IC:/esp/components/fatfs/vfs -IC:/esp/components/fatfs/src -IC:/esp/components/idf_test/include -IC:/esp/components/idf_test/include/esp32 -IC:/esp/components/ieee802154/include -IC:/esp/components/json/cJSON -IC:/esp/components/mqtt/esp-mqtt/include -IC:/esp/components/perfmon/include -IC:/esp/components/spiffs/include -IC:/esp/components/ulp/ulp_common/include -IC:/esp/components/ulp/ulp_common/include/esp32 -IC:/esp/components/wifi_provisioning/include -IC:/esp/examples/common_components/protocol_examples_common/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=D:/Projects_Embarcado/esp32_test_mqtt=. -fmacro-prefix-map=C:/esp=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.1-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-format -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -c D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:21: warning: "CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM" redefined
+   21 | #define CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM 20
+      | 
+In file included from C:/esp/components/newlib/platform_include/assert.h:12,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from C:/esp/components/newlib/platform_include/sys/reent.h:9,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:1:
+D:/Projects_Embarcado/esp32_test_mqtt/build/config/sdkconfig.h:356: note: this is the location of the previous definition
+  356 | #define CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM 10
+      | 
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:23: warning: "CONFIG_ESP32_WIFI_TX_BUFFER_TYPE" redefined
+   23 | #define CONFIG_ESP32_WIFI_TX_BUFFER_TYPE CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM
+      | 
+In file included from C:/esp/components/newlib/platform_include/assert.h:12,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from C:/esp/components/newlib/platform_include/sys/reent.h:9,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:1:
+D:/Projects_Embarcado/esp32_test_mqtt/build/config/sdkconfig.h:359: note: this is the location of the previous definition
+  359 | #define CONFIG_ESP32_WIFI_TX_BUFFER_TYPE 1
+      | 
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:24: warning: "CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM" redefined
+   24 | #define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 0
+      | 
+In file included from C:/esp/components/newlib/platform_include/assert.h:12,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from C:/esp/components/newlib/platform_include/sys/reent.h:9,
+                 from c:\esp\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:1:
+D:/Projects_Embarcado/esp32_test_mqtt/build/config/sdkconfig.h:375: note: this is the location of the previous definition
+  375 | #define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 7
+      | 
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:49:17: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   49 | char mensagem = "na balinha";
+      |                 ^~~~~~~~~~~~
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:49:17: error: initializer element is not computable at load time
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:50:23: warning: initialization of 'const char *' from 'char' makes pointer from integer without a cast [-Wint-conversion]
+   50 | const char *respoty = mensagem;
+      |                       ^~~~~~~~
+D:/Projects_Embarcado/esp32_test_mqtt/main/app_main.c:50:23: error: initializer element is not constant
+ninja: build stopped: subcommand failed.

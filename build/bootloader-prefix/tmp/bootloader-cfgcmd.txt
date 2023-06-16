@@ -1,0 +1,1 @@
+cmd='C:/esp/tools/cmake/3.24.0/bin/cmake.exe;-DSDKCONFIG=D:/Projects_Embarcado/esp32_test_mqtt/sdkconfig;-DIDF_PATH=C:/esp;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=c:/esp/python_env/idf5.0_py3.8_env/Scripts/python.exe;-DEXTRA_COMPONENT_DIRS=C:/esp/components/bootloader;-DPROJECT_SOURCE_DIR=D:/Projects_Embarcado/esp32_test_mqtt;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

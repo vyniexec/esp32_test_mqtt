@@ -1,0 +1,25 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/esp/components/bootloader/subproject",
+    "build_dir":          "D:/Projects_Embarcado/esp32_test_mqtt/build/bootloader",
+    "config_file":        "D:/Projects_Embarcado/esp32_test_mqtt/sdkconfig",
+    "config_defaults":    "",
+    "bootloader_elf":     "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v5.0.1-dirty",
+    "target":             "esp32",
+    "rev":                "0",
+    "min_rev":            "0",
+    "max_rev":            "399",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/esp/components/efuse/Kconfig;C:/esp/components/esp_common/Kconfig;C:/esp/components/esp_hw_support/Kconfig;C:/esp/components/esp_system/Kconfig;C:/esp/components/freertos/Kconfig;C:/esp/components/hal/Kconfig;C:/esp/components/log/Kconfig;C:/esp/components/newlib/Kconfig;C:/esp/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/esp/components/bootloader/Kconfig.projbuild;C:/esp/components/esp_app_format/Kconfig.projbuild;C:/esp/components/esp_rom/Kconfig.projbuild;C:/esp/components/esptool_py/Kconfig.projbuild;C:/esp/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/esp/components/bootloader", "C:/esp/components/bootloader_support", "C:/esp/components/efuse", "C:/esp/components/esp_app_format", "C:/esp/components/esp_common", "C:/esp/components/esp_hw_support", "C:/esp/components/esp_rom", "C:/esp/components/esp_system", "C:/esp/components/esptool_py", "C:/esp/components/freertos", "C:/esp/components/hal", "C:/esp/components/log", "C:/esp/components/bootloader/subproject/main", "C:/esp/components/bootloader/subproject/components/micro-ecc", "C:/esp/components/newlib", "C:/esp/components/partition_table", "C:/esp/components/soc", "C:/esp/components/spi_flash", "C:/esp/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}

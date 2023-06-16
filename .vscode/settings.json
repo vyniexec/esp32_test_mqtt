@@ -21,6 +21,8 @@
         "esp_http_server.h": "c",
         "spi_flash_mmap.h": "c",
         "api.h": "c",
-        "wifi.h": "c"
+        "wifi.h": "c",
+        "task.h": "c",
+        "complex": "c"
     }
 }
